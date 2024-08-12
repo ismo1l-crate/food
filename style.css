@@ -1,0 +1,1199 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: since 2010
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: since 2024
+*/
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/philosopher-v19-latin-700.woff2') format('woff2');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --btn-color: #dc780b;
+    --font-color: rgb(255, 255, 255);
+    --black-color: rgb(21, 12, 1);
+    --features-card-bg-color: rgb(143, 166, 50, 0.1);
+    --smile-bg-color: rgb(220, 120, 11, 0.1);
+    --bg-color-bike: rgb(230, 77, 46, 0.1);
+    --active-color: rgb(220, 120, 11, 0.5);
+    --border-color: rgba(0, 0, 0, 0.10);
+    --stray-color: #bcc4cb;
+    --takeaway-bg-color: #FBF1E7;
+    --footer-bg-color: rgb(37, 37, 37);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-family: "Philosopher", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.head {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 43px;
+}
+
+.logo-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.navlist {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 41px;
+}
+
+.nav-links {
+    font-family: "Roboto";
+    color: slategray;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.nav-links:hover {
+    color: var(--btn-color);
+}
+
+.nav-links:active {
+    color: var(--active-color);
+}
+
+.header-btn {
+    width: 155px;
+    height: 46px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    background: var(--btn-color);
+    color: var(--font-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+
+.header-btn:hover {
+    color: var(--btn-color);
+    background-color: var(--font-color);
+    border: 2px solid var(--btn-color);
+}
+
+.header-btn:active {
+    background-color: var(--active-color);
+    color: var(--font-color);
+    border: none;
+}
+
+.hero-section {
+    padding-top: 30px;
+}
+
+.hero-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hero-title {
+    width: 555px;
+    color: var(--black-color);
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    letter-spacing: 0%;
+    margin-bottom: 42px;
+}
+
+.hero-text {
+    font-family: "Roboto";
+    width: 555px;
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 50px;
+}
+
+.hero-btn-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+}
+
+.hero-btn {
+    width: 158px;
+    height: 60px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    background: var(--btn-color);
+    color: var(--font-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: transparent;
+    border: 1.5px solid var(--btn-color);
+    color: var(--btn-color);
+}
+
+.hero-btn:active {
+    background-color: var(--active-color);
+    color: var(--font-color);
+    border: none;
+}
+
+.hero-button {
+    width: 170px;
+    height: 60px;
+    background-color: var(--font-color);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1.5px solid var(--btn-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: var(--btn-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: var(--btn-color);
+    color: var(--font-color);
+    border: none;
+}
+
+.hero-button:active {
+    background-color: var(--active-color);
+    color: var(--font-color);
+    border: none;
+}
+
+.features-section {
+    padding-top: 115px;
+}
+
+.features-title-content {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.features-subtitle {
+    font-family: "Roboto";
+    color: var(--btn-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.features-title {
+    color: var(--black-color);
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+}
+
+.features-card-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.features-card {
+    width: 300px;
+    text-align: center;
+}
+
+.bg-color-features {
+    width: 88px;
+    height: 88px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--features-card-bg-color);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
+
+.bg-color-features-smile {
+    width: 88px;
+    height: 88px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--smile-bg-color);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
+
+.bg-color-features-smile img {
+    position: relative;
+    top: 18px;
+}
+
+.bg-color-features img {
+    position: relative;
+    top: 20px;
+}
+
+.features-card-title {
+    color: var(--black-color);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 15px;
+}
+
+.features-card-text {
+    font-family: "Roboto";
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.aboutus-section {
+    padding-top: 123px;
+}
+
+.df-aboutus {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 98px;
+}
+
+.df-aboutus img {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.aboutus-subtitle {
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.aboutus-title {
+    width: 478px;
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+}
+
+.aboutus-text {
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 29px;
+}
+
+.aboutus-btn {
+    width: 142px;
+    height: 42px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    background: var(--btn-color);
+    color: var(--font-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.aboutus-btn:hover {
+    background-color: transparent;
+    color: var(--btn-color);
+    border: 1.5px solid var(--btn-color);
+}
+
+.aboutus-btn:active {
+    background-color: var(--active-color);
+    color: var(--font-color);
+    border: none;
+}
+
+.menu-section {
+    padding-top: 115px;
+}
+
+.menu-contents {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.menu-subtitle {
+    color: var(--btn-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.menu-title {
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 25px;
+}
+
+.menu-text {
+    margin: 0 auto;
+    width: 748px;
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.menu-card {
+    width: 360px;
+    height: 446px;
+    border: 1px solid var(--stray-color);
+    -webkit-border-radius: 75px 10px 10px 10px;
+    -moz-border-radius: 75px 10px 10px 10px;
+    border-radius: 75px 10px 10px 10px;
+}
+
+.menu-card-title-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 21px 24px 0;
+    gap: 128px;
+}
+
+.menu-card-title {
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.menu-card-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.menu-card-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.menu-card-price {
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.menu-card-text {
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 20px 24px 0;
+}
+
+.menu-card-btn-wrapper {
+    padding: 20px 0 0;
+}
+
+.menu-card-btn {
+    margin-left: 24px;
+    width: 36px;
+    height: 34px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: var(--btn-color);
+    border: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.menu-card-btn:hover {
+    background-color: var(--black-color);
+}
+
+.menu-card-btn:active {
+    background-color: var(--stray-color);
+}
+
+.menu-star-img {
+    margin-left: 186px;
+}
+
+.card-menu {
+    width: 360px;
+    height: 446px;
+    border: 1px solid var(--stray-color);
+    -webkit-border-radius: 75px 10px 10px 10px;
+    -moz-border-radius: 75px 10px 10px 10px;
+    border-radius: 75px 10px 10px 10px;
+}
+
+.card-menu-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 21px 24px 0;
+    gap: 35px;
+}
+
+.card-menu-title {
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.card-menu-price {
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.card-menu-text {
+    padding: 20px 24px 0;
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.card-menu-btn-wrapper {
+    padding: 20px 0px 0;
+}
+
+.card-menu-btn {
+    margin-left: 24px;
+    width: 36px;
+    height: 34px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: var(--btn-color);
+    border: none;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.card-menu-btn:hover {
+    background-color: var(--black-color);
+}
+
+.card-menu-btn:active {
+    background-color: var(--stray-color);
+}
+
+.star-img {
+    margin-left: 186px;
+}
+
+.menu-btn-wrapper {
+    margin-left: 529px;
+    padding-bottom: 199px;
+}
+
+.menu-btn {
+    width: 142px;
+    height: 42px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid var(--btn-color);
+    background-color: var(--font-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: var(--btn-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: var(--btn-color);
+    border: none;
+    color: var(--font-color);
+}
+
+.menu-btn:active {
+    background-color: var(--active-color);
+}
+
+.takeawy-content-subtitle {
+    color: var(--btn-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 20%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.takeawy-content-title {
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    letter-spacing: 0%;
+    margin-bottom: 29px;
+}
+
+.takeawy-content-text {
+    width: 555px;
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 39px;
+}
+
+.bg-colo-takeawy {
+    background-color: var(--takeaway-bg-color);
+}
+
+.takeawy-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 128px;
+    padding-top: 144px;
+    padding-bottom: 129px;
+}
+
+.appstore-btn {
+    padding-bottom: 10px;
+    width: 163px;
+    height: 48px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: var(--black-color);
+    color: var(--font-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.appstore-btn:hover {
+    background-color: var(--btn-color);
+    border: none;
+}
+
+.appstore-btn:active {
+    background-color: var(--active-color);
+}
+
+.appstore-btn::before {
+    content: url(./images/app-store.svg);
+    position: relative;
+    top: 5px;
+    right: 8px;
+}
+
+.btn-appstore {
+    padding-bottom: 10px;
+    width: 179px;
+    height: 48px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1.5px solid var(--black-color);
+    background-color: transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 30px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.btn-appstore::before {
+    content: url(./images/google-play.svg);
+    position: relative;
+    top: 6px;
+    right: 8px;
+}
+
+.btn-appstore:hover {
+    background-color: var(--btn-color);
+    color: var(--font-color);
+    border: none;
+}
+
+.btn-appstore:active {
+    background-color: var(--active-color);
+}
+
+.testimonal-section {
+    padding-top: 213px;
+    padding-bottom: 120px;
+}
+
+.testimonal-content-wrapper {
+    text-align: center;
+}
+
+.testimonal-subtitle {
+    color: var(--btn-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.testimonal-title {
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 23px;
+}
+
+.testimonal-text {
+    width: 750px;
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin: 0 auto;
+    margin-bottom: 73px;
+}
+
+.testimonal-woman-img {
+    margin-bottom: 42px;
+}
+
+.testimonal-subtext {
+    width: 506px;
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.testimonal-star {
+    margin-bottom: 26px;
+}
+
+.testimonal-name {
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.testimonal-designer-text {
+    color: var(--black-color);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.content-bg-color {
+    background-color: var(--takeaway-bg-color);
+}
+
+.content-wrapper {
+    padding: 115px 46px;
+}
+
+.content-subtitle {
+    color: var(--btn-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.content-title {
+    width: 776px;
+    color: var(--black-color);
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-form {
+    padding-bottom: 117px;
+    text-align: center;
+}
+
+.contact-input {
+    width: 750px;
+    height: 75px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--font-color);
+    padding-left: 32px;
+    border: none;
+}
+
+.contact-btn {
+    width: 156px;
+    height: 75px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--btn-color);
+    color: var(--font-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+    border: none;
+    margin-left: -20px;
+}
+
+.contact-input::-webkit-input-placeholder {
+    color: var(--stray-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+}
+
+.contact-input:-moz-placeholder {
+    color: var(--stray-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+}
+
+.contact-input::-moz-placeholder {
+    color: var(--stray-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+}
+
+.contact-input:-ms-input-placeholder {
+    color: var(--stray-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+}
+
+.contact-input::-ms-input-placeholder {
+    color: var(--stray-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+}
+
+.contact-input::placeholder {
+    color: var(--stray-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 40.6px;
+    letter-spacing: 0%;
+}
+
+.footer-bg-color {
+    background-color: var(--footer-bg-color);
+}
+
+.padding-footer {
+    padding: 137px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 200px;
+}
+
+.footer-logo {
+    margin-bottom: 25px;
+}
+
+.adres-links {
+    color: var(--font-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.adres-links:hover {
+    color: var(--btn-color);
+}
+
+.adres-links:active {
+    color: var(--active-color);
+}
+
+.adres-item {
+    margin-bottom: 17px;
+}
+
+.list-title {
+    color: var(--font-color);
+    font-family: Philosopher;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-bottom: 26px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.list-title:hover {
+    color: var(--btn-color);
+}
+
+.list-title:active {
+    color: var(--active-color);
+}
+
+.adrees-links {
+    color: var(--font-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.adrees-links:hover {
+    color: var(--btn-color);
+}
+
+.adrees-links:active {
+    color: var(--active-color);
+}
+
+.d-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.adrees-link {
+    margin-bottom: 17px;
+}
